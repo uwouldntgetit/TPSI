@@ -95,6 +95,11 @@ img {
 
 }
 
+.colorscheme-dark-sec{
+    color: #d8d9da;
+    background-color: #61677A; 
+}
+
 
 .material-symbols-outlined {
   font-variation-settings:
