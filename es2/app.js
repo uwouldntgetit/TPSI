@@ -8,10 +8,14 @@ const secondaryList = document.getElementsByClassName("secondary");
 
 function changeColorScheme(){
     console.log("ciao");
-    if(colorSchemeBtn.innerHTML === "light_mode")
+    if(colorSchemeBtn.innerHTML === "light_mode"){
         colorSchemeBtn.innerHTML = "dark_mode";
-    else
+        colorSchemeBtn.style.backgroundColor = "#61677a";
+    }
+    else{
         colorSchemeBtn.innerHTML = "light_mode";
+        colorSchemeBtn.style.backgroundColor = "#d8d9da";
+    }
 
     // if(wrapper.classList.contains("colorscheme-light")){
     //     wrapper.classList.add("colorscheme-dark");
