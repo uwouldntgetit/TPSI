@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio Forms</title>
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-content: center ;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            justify-content: center;
+            align-content: center;
+
+            width: 30%;
+        }
+    </style>
+    <form action="" method="post" id="form">
+        <label for="username1">
+            username:
+        </label>
+        <input type="text" name="username-input" id="username1">
+    
+        <label for="username2">
+            username:
+        </label>
+        <input type="text" name="username-input" id="username2">
+        <label for="passwd1">
+            password:
+        </label>
+        <input type="password" name="passwd-input" id="passwd1">
+
+        <label for="textarea1">
+            What did you think of this gig?
+        </label>
+        <textarea name="textarea" id="textarea1">
+        </textarea>
+
+  
+        <div>
+            <legend>
+                please select your favourite music genre:
+            </legend>
+            <label for="radio1">
+                jazz
+            </label>
+            <input type="radio" name="radio-input1" id="radio1">
+            <label for="radio2">
+                rock
+            </label>
+            <input type="radio" name="radio-input2" id="radio2">
+            <label for="radio3">
+                pop
+            </label>
+            <input type="radio" name="radio-input3" id="radio3">
+        </div>
+
+
+        <legend>
+            please select the device you listen music on:
+        </legend>
+        <label for="check1">
+            Itunes
+        </label>
+        <input type="checkbox" name="check-input1" id="check1">
+        <label for="check2">
+            Last.fm
+        </label>
+        <input type="checkbox" name="check-input2" id="check2">
+        <label for="check3">
+            Spotify
+        </label>
+        <input type="checkbox" name="check-input3" id="check3">
+
+
+        <legend>
+            What device do you listen music on
+        </legend>
+        <select name="device" id="dropdown-device">
+            <option value="iPod">iPod</option>
+            <option value="walkman">walkman</option>
+            <option value="pc">pc</option>
+        </select>
+
+
+        <legend>
+            Which of the following instruments do you play?
+        </legend>
+        <select multiple name="instruments" id="dropdown-multiple-instruments">
+            <option value="guitar">guitar</option>
+            <option value="clarinet">clarinet</option>
+            <option value="drums">drums</option>
+        </select>
+
+
+        <legend for="uploaded-song">
+            Upload your song in mp3 format
+        </legend>
+        <input type="file" id="uploaded-song" name="song" accept=".mp3">
+        <button id="upload-song">Upload</button>
+
+
+        <fieldset>
+
+            <div>
+                <label for="email">
+                    email:
+                </label>
+                <input type="text" name="email-input" id="email">
+            </div>
+            <div>
+                <label for="mobile">
+                    mobile:
+                </label>
+                <input type="tel" name="mobile-input" id="mobile">
+            </div>
+            <div>
+                <label for="telephone">
+                    telephone:
+                </label>
+                <input type="tel" name="telephone-input" id="telephone">
+            </div>
+        </fieldset>
+
+        <legend for="date">
+            departure date:
+        </legend>
+        <input type="date" name="input-date" id="date">
+        <button type="submit">Submit</button>
+
+        <legend for="search">
+            search:
+        </legend>
+        <input type="search" name="input-search" id="search">
+        <button>search</button>
+
+    </form>
+
+</body>
+</html>

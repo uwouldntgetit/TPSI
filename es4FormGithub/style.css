@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    --primary: #0d1117;
+    --secondary: #161b22;
+    --tertiary: #30363d;
+    --submit-button: #238636;
+    --font: #dfe6ed;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--font);
+    font-family: "Open Sans", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+
+    background-color: var(--primary);
+}
+
+input {
+    background-color: var(--primary);
+    border: 1px solid var(--tertiary);
+    border-radius: 5px;
+    min-height: 30px;
+    width: 100%;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+path {
+    min-height: 100%;
+    min-width: 100%;
+    color: var(--font);
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
+#logo-path {
+    width: 100%;
+    color: white
+}
+
+.title {
+    font-size: 1.6rem;
+    margin-bottom: -30px;
+    font-weight: 70;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.the-great-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+
+.form {
+    flex-direction: column;
+    background-color: var(--secondary);
+    padding: 20px;
+    width: 320px;
+    border-radius: 8px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    flex-grow: 1;
+    width: 300px;
+}
+
+#password-label {
+    justify-content: space-between;
+
+}
+
+#submit {
+    flex-grow: 1;
+    background-color: var(--submit-button);
+    color: var(--font);
+    border: none;
+    border-radius: 5px;
+    min-width: 200px;
+    height: 30px;
+    font-size: 0.9rem;
+}
+
+.options {
+    flex-direction: column;
+    border: 1px solid var(--tertiary);
+    gap: 10px !important;
+    padding: 15px;
+}
+
+
+.basis-39{
+    flex-basis: 39%;
+}
+
+.basis-60 {
+    flex-basis: 60%;
+}
+
+.side-image-container {
+    object-fit:cover;
+}
+
+#side-image{
+    object-fit: cover;
+    width: 100%;
+}
+
+/* #form-wrapper {
+    padding-left: 35px;
+    padding-right: 35px;
+} */
+
+
+/* Codice Prof */
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border-bottom: 2px solid crimson;
+    color: crimson;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid + label{
+    color: crimson;
+}
+
+label.active {
+    padding: .5rem;
+    top: -2rem;
+    background-color: var(--secondary);
+    
+    font-size: 1.3rem;
+}
+
+input:not(:focus):valid ~ label {
+    padding: .5rem;
+    top: -2rem;
+    background-color: var(--primary);
+    color: crimson;
+}
+
+@media screen and(max-width: 800px){
+    .side-image-container{
+        display:none;
+    }
+
+    .basis-33 {
+        flex-basis: 100%;
+    }
+    
+    body {
+        gap: 0px;
+    }
+}
