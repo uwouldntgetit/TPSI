@@ -1,7 +1,7 @@
 <?php
 
     // debug
-    ini_set('displa_errors', '1');
+    ini_set('display_errors', '1');
 
     // dump a variable
     // var_dump($_REQUEST);
@@ -12,19 +12,13 @@
     if (isset($_COOKIE['theme'])) {
         if ($_COOKIE['theme'] === 'dark') {
 
-            echo '<style>
-                    body {
-		      background-color: #333;
-		      color: #fafafa;
-                    }
-                  </style>';
+            echo '<scipt>
+                    document.body.setAttribute("data-theme", "dark");
+                  </scipt>';
         } else {
-            echo '<style>
-                    body {
-		      background-color: #fafafa;
-		      color: #333;
-                    }
-                  </style>';
+            echo '<script>
+                    document.body.setAttribute("data-theme", "light");
+                  </scri>';
         }
     }
 
